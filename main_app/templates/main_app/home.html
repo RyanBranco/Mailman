@@ -2,15 +2,7 @@
 {% block content %}
 
 <div class="page-container home">
-    <div id="user-info">
-        <h2 class="heading">HOME</h2>
-        <p class="user-info name">Name:<span class="user-info-cont">{{ user.first_name }} {{ user.last_name }}</span></p>
-        <p>E-mail: <span style="margin-left: 1rem; font-size: larger;">{{ user.email }}</span></p>
-    
-        <!-- profile info and current rating -->
-    </div>
     <div id="avail-del">
-        <hr>
         <h2 class="heading">Packages for Delivery</h2>
         {% for package in packages %}
     
