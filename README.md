@@ -24,3 +24,8 @@ Current features being worked on:
 * shipment and delivery history
 
 Screenshots:
+![login](main_app/static/images/mailman1.png)
+![home](main_app/static/images/mailman2.png)
+![new_package](main_app/static/images/mailman3.png)
+![details](main_app/static/images/mailman4.png)
+![profile](main_app/static/images/mailman5.png)
