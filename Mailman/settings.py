@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.gis'
 ]
 
 MIDDLEWARE = [
@@ -77,7 +76,7 @@ WSGI_APPLICATION = 'Mailman.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.contrib.gis.db.backends.postgis', #'django.db.backends.postgresql', 
+        'ENGINE': 'django.db.backends.postgresql', 
         'NAME': "mailman",
     }
 }
@@ -123,3 +122,8 @@ STATIC_URL = '/static/'
 
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/home/'
+
+# Configure Django App for Heroku
+
+import django_heroku
+django_heroku.settings(locals())
