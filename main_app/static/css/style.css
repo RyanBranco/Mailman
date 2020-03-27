@@ -72,6 +72,14 @@ ul {
     border-top: 4px solid #8f3032;
 }
 
+#nav-welcome{
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: right;
+    margin: 0 2rem;
+
+}
+
 /* LOGIN PAGE */
 
 #landing-div {
@@ -163,12 +171,12 @@ ul {
 
 /* ADD PACKAGE */
 
-.flex-column-container.pkg-form {
-    
-}
-
 #btn-pkg-container {
     text-align: center;
+}
+
+.button.landing.cancel {
+    padding: .5rem 1rem;
 }
 
 #opt-user {
@@ -187,7 +195,7 @@ ul {
 .circle-container {
     align-self: center;
     color: white;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 50%;
 }
 
@@ -196,7 +204,9 @@ ul {
     margin: 1.5rem;
     font-size: 40px;
     font-weight: 900;
-    padding: .8rem;
+    padding: .1rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .circle-container.body1 {
@@ -234,7 +244,7 @@ span {
 
 #profile-un {
     margin-top: 0px;
-    font-weight: 100;
+    font-weight: 600;
     display: flex;
     justify-content: center;
 }
@@ -329,6 +339,11 @@ span {
     align-self: center;
     padding: .4rem;
     margin: .5rem;
+}
+
+.button.small.edit {
+    width: 4rem;
+    text-align: center;
 }
 
 
