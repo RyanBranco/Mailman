@@ -2,80 +2,77 @@
 {% block content %}
 
 <!-- profile header -->
-<h1 class="heading" id="profile-un">Welcome {{ user.username }}</h1>
+<h1 class="heading" id="profile-un">PROFILE</h1>
 <div class="page-container">
-    <p>package</p>
-
-<div class="profile-page">
-    <div class="profile-wrapper">
-        <div class="circle-container top">
-        </div>
-        <div class="profile-info">
-            <h2 id="profile-name">{{ user.first_name }}&nbsp;{{ user.last_name }}</h2>
-            <h3 id="profile-email">{{ user.email }}</h3>
-        </div>
-    </div>
-    <hr class="hr-body"/>
-
-    <!-- my shipments block -->
-    <h2 class="heading">MY SHIPMENTS</h2>
-    <div id="avail_del">
-        <h2>Packages for Delivery</h2>
-
-        {% for p in packages %}
-        <div class="shipments">
-            <div class="section-1">
-                <h5 class="sec-1 st">SHIPPING FROM</h5>
-                <h4 class="sec-1 un">{{ p.origination }}</h4>
+    <div class="profile-page">
+        <div class="profile-wrapper">
+            <div> <img class="circle-container top" src="../static/images/profile_pic.png" alt="">
             </div>
-            <div class="section-2">
-                <div class="cities">
-                    <div class="circle-container body1">
-                        <!-- city first letter -->
-                        A
+            <div class="profile-info">
+                <h2 id="profile-name">{{ user.first_name }}&nbsp;{{ user.last_name }}</h2>
+                <h3 id="profile-email">{{ user.email }}</h3>
+            </div>
+        </div>
+        <hr class="hr-body"/>
+
+        <!-- my shipments block -->
+        <h2 class="heading">MY SHIPMENTS</h2>
+        <div id="avail_del">
+            {% for p in packages %}
+            <div class="shipments">
+                <div class="section-1">
+                    <h5 class="sec-1 st">SHIPPING FROM</h5>
+                    <h4 class="sec-1 un">{{ p.origination }}</h4>
+                </div>
+                <div class="section-2">
+                    <div class="cities">
+                        <div class="circle-container body1">
+                            <!-- city first letter -->
+                            A
+                        </div>
+                        <div class="city">
+                            <!-- city -->
+                            POINT A
+                        </div>
                     </div>
-                    <div class="city">
-                        <!-- city -->
-                        POINT A
+        
+                    <div class="dots">● &nbsp; ● &nbsp; ● &nbsp; ●</div>
+                            <!-- distance -->
+                            
+                            <div class="distance"> 
+                                {% if p.destination_length > 0 %}
+                                <h2>{{ p.destination_length }} mi</h2> 
+                                {% else %}
+                                <h2>N/A</h2>
+                                {% endif %}
+                            </div>    
+        
+                    <div class="dots">● &nbsp; ● &nbsp; ● &nbsp; ●</div>
+        
+                    <div class="cities">
+                        <div class="circle-container body2">
+                            <!-- city first letter -->
+                            B
+                        </div>
+                        <div class="city">
+                            <!-- city -->
+                            POINT B
+                        </div>
                     </div>
                 </div>
-    
-                <div class="dots">● &nbsp; ● &nbsp; ● &nbsp; ●</div>
-                        <!-- distance -->
-                        
-                        <div class="distance"> 
-                            {% if p.destination_length > 0 %}
-                            <h2>{{ p.destination_length }} mi</h2> 
-                            {% else %}
-                            <h2>N/A</h2>
-                            {% endif %}
-                        </div>    
-    
-                <div class="dots">● &nbsp; ● &nbsp; ● &nbsp; ●</div>
-    
-                <div class="cities">
-                    <div class="circle-container body2">
-                        <!-- city first letter -->
-                        B
-                    </div>
-                    <div class="city">
-                        <!-- city -->
-                        POINT B
-                    </div>
+                <div class="section-4">
+                    <h5 class="sec-4 st">DELIVER TO</h5>
+                    <h4 class="sec-4 un">{{ p.destination }}</h4>
+                </div>
+                <div class="section-3">
+                    <a class="button small edit" href="{% url 'package_update' p.id %}">EDIT</a>
+                    <a class="button small delete" href="{% url 'package_delete' p.id %}">CANCEL</a>
                 </div>
             </div>
-            <div class="section-4">
-                <h5 class="sec-4 st">DELIVER TO</h5>
-                <h4 class="sec-4 un">{{ p.destination }}</h4>
-            </div>
-            <div class="section-3">
-                <a class="package-button edit" href="{% url 'package_update' p.id %}">Edit</a>
-                <a class="package-button delete" href="{% url 'package_delete' p.id %}">CANCEL</a>
-            </div>
-        </div>
         {% endfor %}
         <!-- pull info for created shipments -->
+    
+        </div>
     </div>
-
-
+</div>
 {% endblock %}
