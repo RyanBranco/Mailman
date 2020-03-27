@@ -72,7 +72,7 @@ ul {
     border-top: 4px solid #8f3032;
 }
 
-#nav-welcome{
+#nav-welcome {
     font-size: 16px;
     font-family: Helvetica, Arial, sans-serif;
     text-align: right;
@@ -141,7 +141,7 @@ ul {
     align-self: center;
 }
 
-#user-info > p {
+#user-info>p {
     font-weight: 700;
 }
 
@@ -358,50 +358,66 @@ span {
 /* #newship {
     display: table; */
 
-    /* Details Page */
+/* Details Page */
 
-    #mapid {
-        height: 180px;
-    }
+#mapid {
+    height: 180px;
+}
 
-    .detail-header {
-        text-align: right;
-        padding: .5rem;
-    }
+.detail-header {
+    text-align: right;
+    padding: .5rem;
+}
 
-    .details-detail {
-        text-align: left;
-        padding: .5rem;
-    }
+.details-detail {
+    text-align: left;
+    padding: .5rem;
+}
 
-    #landing-button {
-        display: table-cell;
-        text-align: center;
-        vertical-align: bottom;
-    }
+#landing-button {
+    display: table-cell;
+    text-align: center;
+    vertical-align: bottom;
+}
 
-    #details-container {
-        display: flex;
-        justify-content: center;
-    }
+#details-container {
+    display: flex;
+    justify-content: center;
+}
 
-    .table.detail {
-        /* border-collapse: separate; */
-        border-spacing: 15px;
-    }
+.table.detail {
+    /* border-collapse: separate; */
+    border-spacing: 15px;
+}
 
-    .detail-header {
-        text-align: left;
-        padding: .5rem;
-    }
+.detail-header {
+    text-align: left;
+    padding: .5rem;
+}
 
-    .details-detail {
-        text-align: left;
-        padding: .5rem;
-        width: 400px;
-    }
+.details-detail {
+    text-align: left;
+    padding: .5rem;
+    width: 400px;
+}
 
-    .button-section {
-        display: flex;
-        justify-content: center;
-    }
+.button-section {
+    display: flex;
+    justify-content: center;
+}
+
+.card.cancel >  h4 {
+    text-align: center;
+}
+
+.card.cancel {
+    border: .5px solid black;
+    border-radius: 15px;
+    width: 600px;
+    height: 100px;  
+    padding: 4rem;
+}
+
+.button.landing.nope {
+    padding: .5rem 1rem;
+}
