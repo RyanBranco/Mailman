@@ -9,7 +9,7 @@ Technologies used:
 
 Additional information on development: [Trello Board](https://trello.com/b/t7izR4F0/mailman-app) | [Wire frame / Pitch deck](https://docs.google.com/presentation/d/1lY9jwsaxmT8gTmNoaJnirnhIsBUqmHBgHC8d7zBj7tI/edit)
 
-Check out the site [here]()
+Check out the site [here](https://mail-man-app.herokuapp.com/)
 
 Current features being worked on:
 (this is an ongoing project that our developers are working on)
