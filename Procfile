@@ -1,1 +1,1 @@
-web: gunicorn Mailman.wsgi
+WSGI_APPLICATION = 'Mailman.wsgi.application'
