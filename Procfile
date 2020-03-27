@@ -1,1 +1,1 @@
-web: gunicorn Mailman.wsgi
+web: gunicorn Mailman.wsgi --log-file -
