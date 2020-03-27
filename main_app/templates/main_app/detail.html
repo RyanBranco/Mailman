@@ -67,7 +67,7 @@
             <form action="{% url 'assoc_driver' package.id user.id %}" method="post">
                 {% csrf_token %}
                 <button type="submit">ACCEPT</button>
-                <a class="package-button cancel" href="{% url 'home' %}">CANCEL</a>
+                <a class="button cancel" href="{% url 'home' %}">CANCEL</a>
             </form>
         </div>
     </div>
