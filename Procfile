@@ -1,1 +1,0 @@
-WSGI_APPLICATION = 'Mailman.wsgi.application'
