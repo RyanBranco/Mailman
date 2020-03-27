@@ -7,7 +7,7 @@ Technologies used:
 * Database:
     * Postgresql
 
-Additional information on development: [Trello Board](https://trello.com/b/t7izR4F0/mailman-app) [Wire frame / Pitch deck](https://docs.google.com/presentation/d/1lY9jwsaxmT8gTmNoaJnirnhIsBUqmHBgHC8d7zBj7tI/edit)
+Additional information on development: [Trello Board](https://trello.com/b/t7izR4F0/mailman-app) | [Wire frame / Pitch deck](https://docs.google.com/presentation/d/1lY9jwsaxmT8gTmNoaJnirnhIsBUqmHBgHC8d7zBj7tI/edit)
 
 Check out the site [here]()
 
