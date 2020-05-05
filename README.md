@@ -1,5 +1,5 @@
 # Mailman
-Local delivery system to avoid going through a major carrier so deliveries are as fast as they can possible be. Users are the delivery drivers for the packages. It avoids the fees and restrictions that major carriers have. Users exchange the money between each other (through the website to avoid fraud of course).
+Local delivery system to avoid going through a major carrier, so deliveries are as fast and affordable. Users are the delivery drivers for the packages. It avoids the fees and restrictions that major carriers have. Users exchange the money between each other (through the website to avoid fraud).
 
 Technologies used:
 * Python:
@@ -15,13 +15,13 @@ Current features being worked on:
 (this is an ongoing project that our developers are working on)
 * Registration to become a driver (so you can make $$$)
 * Mark a package as "delivered"
-* calculate the price of the delivery depending on attributes such as, distance, dimensions, weight, if its fragile etc...
+* Calculate the price of the delivery depending on attributes such as, distance, dimensions, weight, if its fragile etc...
 * Display the users current location
-* establish a static adress for pickup (and have a list of saved adresses for pickup)
+* Establish a static adress for pickup (and have a list of saved adresses for pickup)
 * The drivers time frame while in possession of package
 * User rating for drivers
 * Drivers can search for specific locations
-* shipment and delivery history
+* Shipment and delivery history
 
 Screenshots:
 ![login](main_app/static/images/mailman1.png)
